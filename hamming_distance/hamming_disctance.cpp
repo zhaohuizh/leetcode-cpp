@@ -1,4 +1,5 @@
-
+#include <iostream>
+using namespace std;
 
 class Solution {
 public:
@@ -12,3 +13,9 @@ public:
     return ret;
   }
 };
+
+int main() {
+  Solution* s = new Solution();
+  cout << s->hammingDistance(1, 3) << endl;
+  return 0;
+}
