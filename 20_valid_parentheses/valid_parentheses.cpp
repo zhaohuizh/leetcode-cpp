@@ -20,7 +20,7 @@ private:
 public:
   bool is_valid(string s) {
     stack<char> stack;
-    for(char c: s){
+    for(char& c: s){
       if(is_left(c)) {
         stack.push(c);
       }else{
